@@ -1,10 +1,10 @@
 package com.li.controller;
 
-import com.li.pojo.dto.UserMessage;
+import com.li.pojo.dto.UserMessageDTO;
 import com.li.service.ChatService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -13,13 +13,13 @@ import reactor.core.publisher.Flux;
 @RestController
 @RequestMapping("/chat")
 @Tag(name = "聊天")
+@RequiredArgsConstructor
 public class ChatController {
-    @Autowired
-    private ChatService chatService;
+    private final ChatService chatService;
 
-    @PostMapping
+    @PostMapping(produces = "text/stream;charset=utf-8")
     @Operation(summary = "聊天")
-    public Flux<String> chat(@RequestBody UserMessage userMessage) {
-        return chatService.chat(userMessage);
+    public Flux<String> chat(@RequestBody UserMessageDTO userMessageDTO) {
+        return chatService.chat(userMessageDTO);
     }
 }

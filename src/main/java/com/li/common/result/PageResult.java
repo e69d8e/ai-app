@@ -1,13 +1,15 @@
-package com.li.pojo.dto;
+package com.li.common.result;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserMessage {
-    private String memoryId;
-    private String content;
+public class PageResult<T> {
+    private Long total;
+    private List<T> data;
 }

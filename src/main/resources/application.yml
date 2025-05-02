@@ -15,3 +15,8 @@ spring:
     username: root
     password: ${DEV_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secretKey: "123456"
+  ttlMillis: "432000000" # 5天
+  tokenHead: "Bearer "

@@ -14,7 +14,7 @@ public class ChatTest {
 
     @Test
     public void testChat() {
-        Flux<String> result = assistant.chat("1", "你好");
+        Flux<String> result = assistant.chat("haha", "你好");
         result.subscribe(System.out::println);
     }
 }
