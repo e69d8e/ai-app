@@ -1,4 +1,4 @@
-package com.li.service;
+package com.li.server.service;
 
 import com.li.common.result.Result;
 import com.li.pojo.dto.LoginDTO;

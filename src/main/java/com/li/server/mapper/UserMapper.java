@@ -1,4 +1,4 @@
-package com.li.mapper;
+package com.li.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.li.pojo.entity.User;

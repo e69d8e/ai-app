@@ -1,7 +1,7 @@
-package com.li.controller;
+package com.li.server.controller;
 
 import com.li.pojo.dto.UserMessageDTO;
-import com.li.service.ChatService;
+import com.li.server.service.ChatService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

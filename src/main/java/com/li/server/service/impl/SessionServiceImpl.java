@@ -1,4 +1,4 @@
-package com.li.service.impl;
+package com.li.server.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -8,13 +8,11 @@ import com.li.common.result.PageResult;
 import com.li.common.result.Result;
 import com.li.common.utils.JWTUtil;
 import com.li.common.utils.ThreadLocalUtil;
-import com.li.mapper.SessionMapper;
-import com.li.mapper.UserMapper;
+import com.li.server.mapper.SessionMapper;
+import com.li.server.mapper.UserMapper;
 import com.li.pojo.entity.Session;
 import com.li.pojo.entity.User;
-import com.li.service.SessionService;
-import dev.langchain4j.data.message.ChatMessage;
-import dev.langchain4j.data.message.ChatMessageDeserializer;
+import com.li.server.service.SessionService;
 import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +21,6 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 

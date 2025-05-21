@@ -1,10 +1,10 @@
-package com.li.service.impl;
+package com.li.server.service.impl;
 
 import com.li.assistant.Assistant;
-import com.li.mapper.ChatMapper;
+import com.li.server.mapper.ChatMapper;
 import com.li.pojo.dto.UserMessageDTO;
 import com.li.pojo.entity.Session;
-import com.li.service.ChatService;
+import com.li.server.service.ChatService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

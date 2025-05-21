@@ -1,7 +1,7 @@
-package com.li.controller;
+package com.li.server.controller;
 
 import com.li.common.result.Result;
-import com.li.service.SessionService;
+import com.li.server.service.SessionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

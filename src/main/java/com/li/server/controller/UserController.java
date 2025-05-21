@@ -1,11 +1,11 @@
-package com.li.controller;
+package com.li.server.controller;
 
 import com.li.common.result.Result;
 import com.li.pojo.dto.LoginDTO;
 import com.li.pojo.dto.RegisterDTO;
 import com.li.pojo.dto.UpdatePasswordDTO;
 import com.li.pojo.dto.UserDTO;
-import com.li.service.UserService;
+import com.li.server.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
